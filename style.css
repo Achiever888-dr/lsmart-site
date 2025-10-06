@@ -1,0 +1,16 @@
+html,body {
+  margin:0;
+  font-family: system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:#0f172a;
+  color:#e2e8f0;
+  min-height:100%;
+}
+header {background:#1e293b;padding:1rem;}
+nav {display:flex;flex-wrap:wrap;gap:1rem;align-items:center;}
+nav a {color:#93c5fd;text-decoration:none;}
+nav a:hover {text-decoration:underline;}
+#lang {margin-left:auto;background:#334155;color:#e2e8f0;border:none;padding:0.4rem;}
+main {padding:2rem;text-align:center;}
+h1{font-size:2rem;margin-bottom:1rem;}
+footer{padding:1rem;background:#1e293b;text-align:center;color:#94a3b8;position:relative;bottom:0;width:100%;}
+a{color:#93c5fd;}
