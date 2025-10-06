@@ -3,32 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LSMART — Site en construction</title>
-  <meta name="description" content="Bienvenue sur le site officiel LSMART. Le site est en construction. Merci de votre patience.">
-  <meta property="og:title" content="LSMART — Site en construction">
-  <meta property="og:description" content="Bienvenue sur le site officiel LSMART. Le site est en construction. Merci de votre patience.">
-  <meta property="og:type" content="website">
-  <style>
-    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
-    .wrap { min-height: 100%; display: grid; place-items: center; background: #0f172a; color: #e2e8f0; text-align: center; padding: 2rem; }
-    h1 { font-size: clamp(1.8rem, 3.5vw, 3rem); margin: 0 0 0.5rem; letter-spacing: 0.02em; }
-    p  { font-size: clamp(1rem, 2.2vw, 1.25rem); margin: 0.25rem 0; opacity: 0.9; }
-    .badge { display: inline-block; margin-top: 1rem; padding: 0.4rem 0.8rem; border: 1px solid #334155; border-radius: 999px; font-size: 0.9rem; }
-    footer { position: fixed; bottom: 10px; left: 0; right: 0; text-align: center; font-size: 0.85rem; color: #94a3b8; }
-    a { color: #93c5fd; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <title>LSMART — Site officiel</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <main class="wrap">
-    <div>
-      <h1>Bienvenue sur mon site&nbsp;!</h1>
-      <p>Le site est en construction.</p>
-      <p>Merci de votre patience.</p>
-      <div class="badge">LSMART</div>
-    </div>
-  </main>
-  <footer>© <span id="y"></span> LSMART — Tous droits réservés</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+<header>
+  <nav>
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+    <a href="privacy.html" data-fr="Confidentialité" data-en="Privacy Policy">Confidentialité</a>
+    <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+    <select id="lang">
+      <option value="fr">🇫🇷 FR</option>
+      <option value="en">🇬🇧 EN</option>
+    </select>
+  </nav>
+</header>
+
+<main>
+  <h1 data-fr="Bienvenue sur le site officiel de LSMART !" data-en="Welcome to the official LSMART website!"></h1>
+  <p data-fr="Le site est en construction. Merci de votre patience."
+     data-en="The site is under construction. Thank you for your patience."></p>
+
+  <section id="projects">
+    <h2 data-fr="Projet en vedette" data-en="Featured project"></h2>
+    <p data-fr="Découvrez prochainement Wealth Tycoon, un jeu éducatif unique qui enseigne la liberté financière."
+       data-en="Coming soon: Wealth Tycoon, a unique educational game teaching financial freedom."></p>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> LSMART — Tous droits réservés / All rights reserved</p>
+</footer>
 </body>
 </html>
