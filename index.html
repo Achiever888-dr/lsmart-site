@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
-<body>
+<body
+  data-title-fr="LSMART — Site officiel"
+  data-title-en="LSMART — Official website"
+>
 <header>
   <nav>
     <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
     <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
     <a href="privacy.html" data-fr="Confidentialité" data-en="Privacy Policy">Confidentialité</a>
+    <a href="terms.html" data-fr="Conditions d’utilisation" data-en="Terms of Use">Conditions d’utilisation</a>
+    <a href="delete-account.html" data-fr="Suppression du compte" data-en="Account Deletion">Suppression du compte</a>
     <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
-    <select id="lang">
+    <select id="lang" aria-label="Language / Langue">
       <option value="fr">🇫🇷 FR</option>
       <option value="en">🇬🇧 EN</option>
     </select>
@@ -22,19 +27,57 @@
 </header>
 
 <main>
-  <h1 data-fr="Bienvenue sur le site officiel de LSMART !" data-en="Welcome to the official LSMART website!"></h1>
-  <p data-fr="Le site est en construction. Merci de votre patience."
-     data-en="The site is under construction. Thank you for your patience."></p>
+  <h1
+    data-fr="Bienvenue sur le site officiel de LSMART !"
+    data-en="Welcome to the official LSMART website!"
+  >Bienvenue sur le site officiel de LSMART !</h1>
+
+  <p
+    data-fr="Le site est en construction. Merci de votre patience."
+    data-en="The site is under construction. Thank you for your patience."
+  >Le site est en construction. Merci de votre patience.</p>
 
   <section id="projects">
-    <h2 data-fr="Projet en vedette" data-en="Featured project"></h2>
-    <p data-fr="Découvrez prochainement Wealth Tycoon, un jeu éducatif unique qui enseigne la liberté financière."
-       data-en="Coming soon: Wealth Tycoon, a unique educational game teaching financial freedom."></p>
+    <h2
+      data-fr="Projet en vedette"
+      data-en="Featured project"
+    >Projet en vedette</h2>
+
+    <p
+      data-fr="Découvrez prochainement Wealth Tycoon, un jeu éducatif unique qui enseigne la liberté financière."
+      data-en="Coming soon: Wealth Tycoon, a unique educational game teaching financial freedom."
+    >Découvrez prochainement Wealth Tycoon, un jeu éducatif unique qui enseigne la liberté financière.</p>
+  </section>
+
+  <section id="legal">
+    <h2
+      data-fr="Informations légales"
+      data-en="Legal information"
+    >Informations légales</h2>
+
+    <p data-fr>
+      Consultez la
+      <a href="privacy.html">politique de confidentialité</a>,
+      les <a href="terms.html">conditions d’utilisation</a>
+      ou la <a href="delete-account.html">procédure de suppression du compte</a>.
+    </p>
+
+    <p data-en style="display:none">
+      Read the
+      <a href="privacy.html">Privacy Policy</a>,
+      the <a href="terms.html">Terms of Use</a>
+      or the <a href="delete-account.html">account deletion procedure</a>.
+    </p>
   </section>
 </main>
 
 <footer>
-  <p>© <span id="year"></span> LSMART — Tous droits réservés / All rights reserved</p>
+  <nav aria-label="Legal">
+    <a href="privacy.html" data-fr="Politique de confidentialité" data-en="Privacy Policy">Politique de confidentialité</a>
+    <a href="terms.html" data-fr="Conditions d’utilisation" data-en="Terms of Use">Conditions d’utilisation</a>
+    <a href="delete-account.html" data-fr="Suppression du compte" data-en="Account Deletion">Suppression du compte</a>
+  </nav>
+  <p>© <span id="year"></span> LSMART — <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
 </footer>
 </body>
 </html>
