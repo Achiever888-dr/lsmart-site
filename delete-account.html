@@ -38,7 +38,11 @@
 <p>La suppression vise le compte Firebase, le profil, Player ID, pseudo, avatar cloud, progression, sauvegardes, statistiques, ville, groupes, rôles, demandes d’adhésion, messages, récompenses, coupons, données d’achats liées au compte, mentions « J’aime », signalements et données de modération ordinaires.</p>
 
 <h2>5. Données pouvant subsister</h2>
-<p>Peuvent rester : les données conservées par Google Play, Google, Meta ou d’autres fournisseurs ; les preuves légalement nécessaires de transaction, comptabilité, fiscalité, sécurité ou fraude ; des marqueurs techniques sans contenu complet ; et, pour une suppression administrative liée à une violation grave, un audit minimal de modération pendant au maximum 365 jours.</p>
+<p>Peuvent rester : les données conservées directement par Google Play, Google, Meta ou d’autres fournisseurs ; les preuves de transaction, de comptabilité, de fiscalité, de sécurité ou de fraude dont la conservation est nécessaire ; ainsi que des marqueurs techniques anonymisés, sans contenu complet ni identité du compte supprimé, servant à empêcher la réapparition de contenus supprimés.</p>
+
+<p>Lorsqu’un compte est supprimé administrativement à la suite d’une violation grave, LSMART peut conserver pendant au maximum 90 jours un reçu minimal de la décision. Ce reçu peut contenir l’identifiant public du joueur au format WT-…, une catégorie normalisée de violation, le rôle de l’auteur de la décision, le statut de la suppression et ses dates. Il ne contient pas l’UID Firebase du joueur, l’UID de l’administrateur, les messages, avatars, motifs libres, contenus de signalement ou l’historique détaillé des sanctions.</p>
+
+<p>Un état technique temporaire de la suppression administrative, contenant l’identifiant interne du compte et le statut de l’opération, peut subsister pendant au maximum 7 jours à des fins de suivi opérationnel. Cette conservation n’est pas nécessaire au déclenchement de la purge locale, qui peut également intervenir lorsque l’application détecte ultérieurement que le compte distant n’existe plus.</p>
 
 <h2>6. Conséquences</h2>
 <p>La suppression est normalement irréversible et peut entraîner la perte définitive de la progression, des récompenses et des contenus achetés liés au compte. Elle ne constitue pas une demande de remboursement.</p>
@@ -65,8 +69,11 @@
 <p>Deletion is intended to remove the Firebase account, profile, Player ID, username, cloud avatar, progress, saves, statistics, city, groups, roles, join requests, messages, rewards, coupons, account-linked purchase data, likes, reports and ordinary moderation data.</p>
 
 <h2>5. Data that may remain</h2>
-<p>Some information may remain: data retained by Google Play, Google, Meta or other providers; legally required transaction, accounting, tax, security or fraud evidence; technical non-content markers; and, for administrative deletion involving a serious violation, a minimal moderation audit for up to 365 days.</p>
+<p>Information retained directly by Google Play, Google, Meta or other providers may remain, together with transaction, accounting, tax, security or fraud records whose retention is necessary, and anonymized technical markers without full content or the deleted account’s identity that prevent deleted content from reappearing.</p>
 
+<p>When an account is administratively deleted following a serious violation, LSMART may retain a minimal decision receipt for no more than 90 days. This receipt may contain the player’s public WT-… identifier, a normalized violation category, the decision-maker’s role, the deletion status and relevant dates. It does not contain the player’s Firebase UID, the administrator’s UID, messages, avatars, free-form reasons, report contents or detailed sanction history.</p>
+
+<p>A temporary technical state of the administrative deletion, containing the internal account identifier and operation status, may remain for no more than 7 days for operational follow-up. This retention is not required to trigger the local purge, which may also occur when the app later detects that the remote account no longer exists.</p>
 <h2>6. Consequences</h2>
 <p>Deletion is normally irreversible and may permanently remove progress, rewards and purchased content tied to the account. It is not a refund request.</p>
 
