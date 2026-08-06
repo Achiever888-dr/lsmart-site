@@ -14,3 +14,51 @@ main {padding:2rem;text-align:center;}
 h1{font-size:2rem;margin-bottom:1rem;}
 footer{padding:1rem;background:#1e293b;text-align:center;color:#94a3b8;position:relative;bottom:0;width:100%;}
 a{color:#93c5fd;}
+/* Long legal and community documents */
+body.legal-page main {
+  width: min(100% - 2rem, 980px);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+  line-height: 1.65;
+}
+
+body.legal-page main > h1 {
+  text-align: center;
+}
+
+body.legal-page main section {
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+body.legal-page main h2 {
+  margin-top: 2rem;
+  color: #f8fafc;
+}
+
+body.legal-page main p,
+body.legal-page main li {
+  color: #e2e8f0;
+}
+
+body.legal-page main li {
+  margin-bottom: 0.6rem;
+}
+
+body.legal-page main ul {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  body.legal-page main {
+    width: min(100% - 1rem, 980px);
+    padding: 1rem 0.5rem;
+  }
+
+  body.legal-page main section {
+    padding: 1rem;
+  }
+}
